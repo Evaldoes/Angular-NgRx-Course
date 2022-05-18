@@ -1,0 +1,20 @@
+<table class="table">
+  <thead>
+    <tr>
+      <td>ID</td>
+      <td>Nome</td>
+      <td>Idade</td>
+      <td>Perfil</td>
+      <td>Ação</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.age}}</td>
+      <td>{{user.profile}}</td>
+      <td><button class="btn btn-primary">Editar</button></td>
+    </tr>
+  </tbody>
+</table>
